@@ -67,10 +67,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                                   &mmv MOVE_UP                     &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE                    &mmv MOVE_DOWN                   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LALT  &mo 1  &kp SPACE                                                                &kp RET  &mo 2  &kp LGUI
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                                     &mmv MOVE_UP                     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE                    &mmv MOVE_DOWN                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LALT  &mo 1  &lt 3 SPACE                                                                &lt 3 ENTER  &mo 2  &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -102,13 +102,22 @@
 
         layer_cfg {
             bindings = <
-&kp C_STOP         &kp C_PLAY       &kp F1  &kp F2  &kp F3  &kp F10                    &trans          &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_CLR
-&kp C_PREV         &kp C_NEXT       &kp F4  &kp F5  &kp F6  &kp F11            &trans  &trans  &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
-&kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F7  &kp F8  &kp F9  &kp F12  &trans            &trans          &trans          &trans           &trans           &trans           &out OUT_BLE     &out OUT_USB
-                                            &trans  &trans  &trans                                     &trans          &trans           &trans
+&kp C_STOP    &kp C_PLAY    &kp F1        &kp F2        &kp F3      &bootloader                     &trans          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_CLR
+&kp C_PREV    &kp C_NEXT    &kp F4        &kp F5        &kp F6      &bt BT_SEL 4            &trans  &trans  &trans  &bootloader   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
+&bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_NXT  &bt BT_CLR    &trans            &trans          &bt BT_CLR    &bt BT_NXT       &trans           &trans           &out OUT_BLE     &out OUT_USB
+                                          &trans        &trans      &trans                                          &trans        &trans           &trans
             >;
 
             label = "CONFIG";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
