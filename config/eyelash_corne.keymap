@@ -104,7 +104,7 @@
             bindings = <
 &kp C_STOP    &kp C_PLAY    &kp F1        &kp F2        &kp F3      &bootloader                     &trans          &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &bt BT_CLR
 &kp C_PREV    &kp C_NEXT    &kp F4        &kp F5        &kp F6      &bt BT_SEL 4            &trans  &trans  &trans  &bootloader   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
-&bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_NXT  &bt BT_CLR    &trans            &trans          &bt BT_CLR    &bt BT_NXT       &trans           &trans           &out OUT_BLE     &out OUT_USB
+&bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_NXT  &bt BT_CLR    &trans            &trans          &bt BT_CLR    &bt BT_NXT       &reset           &trans           &out OUT_BLE     &out OUT_USB
                                           &trans        &trans      &trans                                          &trans        &trans           &trans
             >;
 
