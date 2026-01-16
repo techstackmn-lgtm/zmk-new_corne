@@ -66,10 +66,10 @@
         default_layer {
             display-name = "Colemak DHm";
             bindings = <
-&kp TAB    &kp Q             &kp W  &kp F     &kp P      &kp B                               &kp UP                &kp J        &kp L      &kp U      &kp Y    &kp SEMICOLON      &trans
-&td0       &mt LEFT_SHIFT A  &kp R  &kp S     &kp T      &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &kp N      &kp E      &kp I    &mt RIGHT_SHIFT O  &trans
-&kp LCTRL  &kp Z             &kp X  &kp C     &kp D      &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H      &kp COMMA  &kp DOT  &kp FSLH           &trans
-                                    &kp LGUI  &lt 1 TAB  &lt 3 SPACE                                               &lt 3 ENTER  &lt 2 TAB  &kp RALT
+&none  &kp Q             &kp W  &kp F     &kp P               &kp B                               &kp UP                &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON      &trans
+&none  &mt LEFT_SHIFT A  &kp R  &kp S     &mt LEFT_CONTROL T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RIGHT_CONTROL N  &kp E      &kp I    &mt RIGHT_SHIFT O  &trans
+&none  &kp Z             &kp X  &kp C     &kp D               &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H                &kp COMMA  &kp DOT  &kp FSLH           &trans
+                                &kp LGUI  &lt 1 TAB           &lt 3 SPACE                                               &lt 3 ENTER  &lt 2 TAB            &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
