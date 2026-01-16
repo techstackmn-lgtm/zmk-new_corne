@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   Colemak DHm:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Q
   - W
   - F
@@ -14,22 +14,22 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&td0'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - R
   - S
-  - T
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - M
-  - N
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
   - E
   - I
   - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - X
   - C
