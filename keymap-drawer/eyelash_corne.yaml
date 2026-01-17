@@ -220,10 +220,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - E
-  - KBIA PREV
+  - AL PREV TASK
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - KBIA NEXT
+  - AL NEXT TASK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
