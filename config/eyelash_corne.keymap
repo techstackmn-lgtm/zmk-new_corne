@@ -27,6 +27,11 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
+&mt {
+    tapping-term-ms = <300>;
+    flavor = "balanced";
+};
+
 / {
     behaviors {
         td0: td0 {
