@@ -220,10 +220,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - E
-  - PREV
+  - PREVIOUS
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - NEXT
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
