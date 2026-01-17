@@ -29,7 +29,7 @@
 
 &mt {
     tapping-term-ms = <400>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 
 / {
@@ -119,7 +119,7 @@
         media {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp R       &kp M             &kp H              &kp S            &kp V            &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp E       &kp K_PREV        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_NEXT       &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp E       &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT       &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp O       &kp KP_NUMBER_0   &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
                         &trans  &trans  &trans                                    &kp K_STOP  &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
