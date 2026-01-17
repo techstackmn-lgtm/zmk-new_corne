@@ -66,10 +66,10 @@
         default_layer {
             display-name = "Colemak DHm";
             bindings = <
-&none  &kp Q             &kp W  &kp F     &kp P               &kp B                               &kp UP                &kp J        &kp L                &kp U      &kp Y    &kp SEMICOLON      &trans
-&none  &mt LEFT_SHIFT A  &kp R  &kp S     &mt LEFT_CONTROL T  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RIGHT_CONTROL N  &kp E      &kp I    &mt RIGHT_SHIFT O  &trans
-&none  &kp Z             &kp X  &kp C     &kp D               &kp V        &kp SPACE              &kp DOWN              &kp K        &kp H                &kp COMMA  &kp DOT  &kp FSLH           &trans
-                                &kp LGUI  &lt 1 TAB           &lt 3 SPACE                                               &lt 3 ENTER  &lt 2 TAB            &kp RALT
+&kp Q   &kp Q               &kp W           &kp F               &kp P             &kp B                             &kp UP                &kp J        &kp L              &kp U                &kp Y            &kp SEMICOLON        &trans
+&kp Q   &mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O  &trans
+&trans  &kp Z               &kp X           &kp C               &kp D             &kp V      &kp SPACE              &kp DOWN              &kp K        &kp H              &kp COMMA            &kp DOT          &kp FSLH             &trans
+                                            &lt 4 ESC           &lt 5 SPACE       &lt 6 TAB                                               &lt 7 ENTER  &lt 8 BACKSPACE    &lt 9 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -109,6 +109,60 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        media {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp R       &kp M             &kp H              &kp S            &kp V            &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp E       &kp K_PREV        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_NEXT       &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp O       &kp KP_NUMBER_0   &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+                        &trans  &trans  &trans                                    &kp K_STOP  &kp K_PLAY_PAUSE  &kp K_MUTE
+            >;
+        };
+
+        navigation {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp CAPS    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+                        &trans  &trans  &trans                                    &kp ENTER   &kp BACKSPACE   &kp DEL
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp K_REDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_UNDO       &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                        &trans  &trans  &trans                                    &kp R       &kp L           &kp M
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTRK             &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS                   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE         &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS                                          &trans  &trans  &trans
+            >;
+        };
+
+        number {
+            bindings = <
+&trans  &kp LEFT_BRACKET  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp RIGHT_BRACKET                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SEMICOLON     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL                    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                           &kp PERIOD       &kp KP_NUMBER_0  &kp UNDERSCORE                                       &trans  &trans  &trans
+            >;
+        };
+
+        fun {
+            bindings = <
+&trans  &kp F12  &kp F7  &kp F8      &kp F9     &kp PRINTSCREEN                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp K_MENU  &kp SPACE  &kp TAB                                            &trans  &trans  &trans
+            >;
         };
     };
 };
