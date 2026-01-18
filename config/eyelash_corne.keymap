@@ -68,7 +68,7 @@
         default_layer {
             display-name = "Colemak DHm";
             bindings = <
-&kp Q   &kp Q               &kp W           &kp F               &kp P             &kp B                             &kp UP                &kp J        &kp L              &kp U                &kp Y            &kp SEMICOLON        &trans
+&kp Q   &kp Q               &kp W           &kp F               &kp P             &kp B                             &kp UP                &kp J        &kp L              &kp U                &kp Y            &kp SQT              &trans
 &kp Q   &mt LEFT_COMMAND A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp M        &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_COMMAND O  &trans
 &trans  &kp Z               &kp X           &kp C               &kp D             &kp V      &kp SPACE              &kp DOWN              &kp K        &kp H              &kp COMMA            &kp DOT          &kp FSLH             &trans
                                             &lt 4 ESC           &lt 5 SPACE       &lt 6 TAB                                               &lt 7 ENTER  &lt 8 BACKSPACE    &lt 9 DEL
