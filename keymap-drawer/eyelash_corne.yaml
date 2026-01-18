@@ -12,7 +12,7 @@ layers:
   - L
   - U
   - Y
-  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
